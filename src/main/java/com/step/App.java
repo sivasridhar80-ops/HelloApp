@@ -1,13 +1,14 @@
 package com.step;
 
-/**
- * Hello world!
- *
- */
-public class App 
+public class App
 {
-    public static void main( String[] args )
+    public static void main(String[] args)
     {
-        System.out.println( "Hello World!" );
+        if (args.length == 0) {
+            System.out.println("Hello, Stranger!");
+        } else {
+            String name = args[0];
+            System.out.println("Hello, " + name + "!");
+        }
     }
 }
