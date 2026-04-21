@@ -1,5 +1,4 @@
 package com.step;
-
 public class App {
 
     public static void main(String[] args) {
@@ -8,14 +7,7 @@ public class App {
             System.out.println("Hello, World!");
         }
         else {
-
-            String names = "";
-
-            for (String name : args) {
-                names += name + ", ";
-            }
-            names = names.substring(0, names.length() - 2);
-
+            String names = String.join(", ", args);
             System.out.println("Hello, " + names + "!");
         }
     }
