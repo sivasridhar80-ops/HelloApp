@@ -1,14 +1,15 @@
 package com.step;
 
-public class App
-{
-    public static void main(String[] args)
-    {
-        if (args.length == 0) {
-            System.out.println("Hello, World!");
-        } else {
-            String name = args[0];
-            System.out.println("Hello, " + name + "!");
+public class App{
+
+    public static void main(String[] args) {
+
+        String name = "World";   // default value
+
+        if (args.length > 0) {
+            name = args[0];
         }
+
+        System.out.println("Hello " + name);
     }
 }
