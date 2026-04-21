@@ -8,10 +8,15 @@ public class App {
             System.out.println("Hello, World!");
         }
         else {
-            for (String name : args) {
-                System.out.println("Hello, " + name + "!");
-            }
-        }
 
+            String names = "";
+
+            for (String name : args) {
+                names += name + ", ";
+            }
+            names = names.substring(0, names.length() - 2);
+
+            System.out.println("Hello, " + names + "!");
+        }
     }
 }
